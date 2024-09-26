@@ -5,7 +5,7 @@ WIDTH, HEIGHT = 500, 500
 WIN = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Draw circle")
 
-WHITE = (255,255,255)
+BLACK = (0,0,0)
 
 def main():
     run = True
@@ -14,7 +14,7 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
         
-        WIN.fill(WHITE)
+        WIN.fill(BLACK)
         pygame.display.update()
 
     pygame.quit()
